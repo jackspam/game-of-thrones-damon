@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Game of Thrones: Damon — MiniMax H3 Tests</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #0f1115; color: #e5e7eb; margin: 0; padding: 32px; }
+    h1 { margin: 0 0 8px; font-size: 24px; }
+    p.sub { color: #9ca3af; margin: 0 0 28px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 24px; }
+    .card { background: #181b22; border: 1px solid #2a2f3a; border-radius: 12px; padding: 16px; display: flex; flex-direction: column; gap: 12px; }
+    .card h2 { margin: 0; font-size: 16px; color: #f3f4f6; }
+    .meta { font-size: 13px; color: #9ca3af; line-height: 1.5; }
+    video { width: 100%; border-radius: 8px; background: #000; }
+    a.btn { display: inline-block; text-align: center; padding: 10px 14px; border-radius: 8px; background: #2563eb; color: #fff; text-decoration: none; font-weight: 600; font-size: 14px; }
+    a.btn:hover { background: #1d4ed8; }
+  </style>
+</head>
+<body>
+  <h1>MiniMax H3 — Damon Test Clips</h1>
+  <p class="sub">Colab L4 (23 GB VRAM) · 4-step Turbo LoRA · ElevenLabs custom "Damon" voice (v4 Turbo)</p>
+  <div class="grid">
+    <div class="card">
+      <h2>Test C — 768p Direct MP3 (Best)</h2>
+      <div class="meta">1344×768 · 8s · <code>simple</code> scheduler · 511.7s (~8m 32s warm)</div>
+      <video controls playsinline src="clips/damon_test_c_768p.mp4"></video>
+      <a class="btn" href="clips/damon_test_c_768p.mp4" download="damon_test_c_768p.mp4">Download MP4</a>
+    </div>
+    <div class="card">
+      <h2>Test B — 480p Direct MP3</h2>
+      <div class="meta">864×480 · 8s · <code>beta</code> scheduler · 140.1s (~2m 20s warm)</div>
+      <video controls playsinline src="clips/damon_test_b_direct.mp4"></video>
+      <a class="btn" href="clips/damon_test_b_direct.mp4" download="damon_test_b_direct.mp4">Download MP4</a>
+    </div>
+    <div class="card">
+      <h2>Test A — 480p Voice-Timbre Reference</h2>
+      <div class="meta">864×480 · 8s · <code>beta</code> scheduler · 272.7s (~4m 33s cold start)</div>
+      <video controls playsinline src="clips/damon_test_a_timbre.mp4"></video>
+      <a class="btn" href="clips/damon_test_a_timbre.mp4" download="damon_test_a_timbre.mp4">Download MP4</a>
+    </div>
+  </div>
+</body>
+</html>
